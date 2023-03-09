@@ -1,9 +1,9 @@
 public class PasswordOptions {
     int length; //length of password
-    boolean uppercase;
-    boolean lowercase;
-    boolean numbers;
-    boolean symbols;
+    boolean uppercase; //uppercase characters in password
+    boolean lowercase; //lowercase characters in password
+    boolean numbers; //number characters in password
+    boolean symbols; //symbol characters in password
 
      PasswordOptions(){
     }

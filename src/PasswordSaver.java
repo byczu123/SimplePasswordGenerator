@@ -1,13 +1,12 @@
 import java.io.*;
 
 public class PasswordSaver {
-
+    //method that saves password to the filename.txt
     public void savePassword(String password, String filename) {
         try {
-            File file = new File(filename+".txt");
-            PrintWriter zapis = new PrintWriter(filename+".txt");
-            zapis.println(password);
-            zapis.close();
+            PrintWriter save = new PrintWriter(filename+".txt");
+            save.println(password);
+            save.close();
         } catch (IOException e) {
             System.out.println("Error");
         }
